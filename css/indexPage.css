@@ -1,0 +1,39 @@
+body{
+    margin-top: 10vh;
+}
+
+header{
+    height: auto;
+    display: flexbox;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#imgLogo{
+    height: 15vw;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.textoDescricao{
+    display: block;
+    padding: 5%;
+    font-size: larger;
+}
+
+.botao > *{
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 30%;
+    padding: 1%;
+    color: white;
+    background-color: royalblue;
+    font-size: large;
+}
+
+.infoLink{
+    margin: auto;
+    text-align: center;
+}
