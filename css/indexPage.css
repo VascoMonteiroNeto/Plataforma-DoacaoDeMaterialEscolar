@@ -33,6 +33,16 @@ header{
     font-size: large;
 }
 
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    background-color: slateblue;
+    color: black;
+}
+
 .infoLink{
     margin: auto;
     text-align: center;
