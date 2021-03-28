@@ -1,0 +1,59 @@
+h1{
+    display: flex;
+}
+figure{
+    height: 5vw;
+    display:flex; 
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    text-align: right;
+}
+li{
+    margin: 6vh 8vh 8vh 8vh;
+    
+    font-size: 60%;
+}
+
+li:hover{
+color: red;
+font-size: 65%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin:auto;
+    align-items: center;
+}
+.input{
+    display: flex;
+    margin: 2vh;
+    padding: 1vh;
+    width: 30%;
+}
+
+
+.btn{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.btn_doador1{
+    margin: 5vh;
+    padding: 2vh;
+}
+.btn_doador2{
+    margin: 5vh;
+    padding: 2vh;
+}
+.btn_doador1:hover{
+    color: orange;
+    font-size: 100%;
+}
+.btn_doador2:hover{
+    color: orange;
+    font-size: 100%;
+}
