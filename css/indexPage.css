@@ -1,49 +1,38 @@
 body{
-    margin-top: 10vh;
+    margin: 0;
+}
+section{
+    height: 100vh;
 }
 
-header{
-    height: auto;
-    display: flexbox;
+.segunda-sessao{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.boxInfo{
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    text-align: center;
 }
 
-#imgLogo{
-    height: 15vw;
-    border-radius: 50%;
+.boxInfo > *{
     margin: auto;
 }
 
-.textoDescricao{
-    display: block;
-    padding: 5%;
-    font-size: larger;
+.doadorBox{
+    background-color: chartreuse;
 }
 
-.botao > *{
-    display: block;
-    margin: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    width: 30%;
-    padding: 1%;
-    color: white;
-    background-color: royalblue;
-    font-size: large;
+.donatarioBox{
+    background-color: brown;
 }
 
-a{
-    text-decoration: none;
-    text-align: center;
-}
-
-a:hover{
-    background-color: slateblue;
+.botaoLink{
+    background-color: darkmagenta;
+    padding: 5% 10% 5% 10%;
     color: black;
-}
-
-.infoLink{
-    margin: auto;
-    text-align: center;
 }
