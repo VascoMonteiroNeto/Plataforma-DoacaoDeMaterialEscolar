@@ -5,6 +5,9 @@ section{
     height: 100vh;
 }
 
+/* PRIMEIRA  SESSÃO */
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -13,10 +16,66 @@ nav {
     height: 15vh;
     align-items: center;
     padding-left: 10vw;
-    padding-right: 10vw;
+    padding-right: 10vw;    
     box-shadow: 0px 3px 6px #0000005C;
 }
 
-.logo{
-    height: 15vh;
+#logoNav{
+    display: block;
+    height: 10vh;
+    width:auto;
 }
+
+.primeiraSessao{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+}
+
+.caixaImagem{
+    display: flex;
+    flex-direction: column;
+    width:70vw;
+    margin: 3%;
+}
+
+#imgPrimeiraSessão{
+    width: 50vw;
+    margin: auto    ;
+}
+
+.caixaBotões{
+    float: right;
+    width:30vw;
+    margin: auto;
+}
+
+.botoesTelaInicial{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesTelaInicial > *{
+    background-color: aqua;
+    padding: 10%;
+    margin-top: 10%;
+}
+
+/* SEGUNDA SESSÃO */
+
+.segunda-sessao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10vw;
+}
+
+.textoSegundaSessão{
+    font-size: 120%;
+}
+
+#imgPag2{
+    height: 60vh;
+}
+
