@@ -9,37 +9,40 @@
 </head>
 <body>
     <h1>
-        <figure class="logo">
-            <img class="imgLogo" src="imgs/logo.png">
-        </figure>
-        
-        <ul>
-            <li>Como funciona?</li>
-            <li>Participar</li>
-            <li>Nossas rede sociais</li>
-        </ul>
+        Faça seu cadastro
     </h1>
+    <figure>
+
+    </figure>
+    <h2>
+        Informe os dados do aluno
+    </h2>
 
 
     <main>
    
       <form action="">
         <input id="name" class="input" name="name" type="texte" placeholder="Nome do aluno">
-        <input id="email" class="input" name="name" type="texte" placeholder="Nome do responsavel">
-        <input id="email" class="input" name="city" type="texte" placeholder="Cidade">
-        <input id="email" class="input" name="nada" type="texte" placeholder="Em Branco">
-        <input id="email" class="input" name="email" type="email" placeholder="Email">
-        <select name="place">
-            <option value="rj">Rio de Janeiro</option>
-            <option value="sp">São Paulo</option>
-            <option value="es">Espirito Santo</option>
-            <option value="mg">Minas Gerais</option>
+        <label class= "label">Obrigatorio</label>
+        <input id="email" class="input" name="name" type="texte" placeholder="Nome do responsável">
+        <label class= "label">Obrigatorio</label>
+        <input id="email" class="input" name="date"  type="texte" placeholder="Data de nascimento">
+        <label class= "label">Obrigatorio</label>
+        <input id="email" class="input" name="nada" type="texte" placeholder="Número da matrícula">
+        <label class= "label">Obrigatorio</label>
+        <select class ="select" name="place">
+            <option disabled selected style="display: none;" value="">Escolaridade</option>
+            <option value="rj">Ensino infantil</option>
+            <option value="sp">Ensino fundamental</option>
+            <option value="es">Ensino médio</option>
+            <option value="mg">Ensino especial</option>
         </select>
-        <div class="btn_doador">
-            <button class="btn_doador1" type="submit">Confirmar</button>
-            <button class="btn_doador2" type="submit">Limpar tudo</button>
-          </div>
+        
     </form>
+    <div class="btn_doador">
+        <button class="btn_doador1" type="submit">VOLTAR</button>
+        <button class="btn_doador2" type="submit">CONTINUAR</button>
+      </div>
         
        
     </main>
