@@ -5,34 +5,18 @@ section{
     height: 100vh;
 }
 
-.segunda-sessao{
+nav {
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-
-.boxInfo{
-    width: 50vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 15vh;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-shadow: 0px 3px 6px #0000005C;
 }
 
-.boxInfo > *{
-    margin: auto;
-}
-
-.doadorBox{
-    background-color: chartreuse;
-}
-
-.donatarioBox{
-    background-color: brown;
-}
-
-.botaoLink{
-    background-color: darkmagenta;
-    padding: 5% 10% 5% 10%;
-    color: black;
+.logo{
+    height: 15vh;
 }
