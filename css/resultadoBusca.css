@@ -1,0 +1,41 @@
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+}
+
+#escolaImg{
+    height: 18vh;
+}
+
+.contentResBusca, .cardPerfilAluno{
+    display: flex;
+    flex-direction: row;
+    background-color:bisque;
+    height: 20vh;
+    width: 40vw;
+    margin-top: 1.5vh;
+    margin-left: 5vw;
+}
+
+.cardPerfilAluno{
+    background-color: brown;
+    justify-content: space-between;
+    
+}
+
+.cardPerfilAluno > *{
+    margin:auto;
+}
+
+#valorLista{
+    float: right;
+}
