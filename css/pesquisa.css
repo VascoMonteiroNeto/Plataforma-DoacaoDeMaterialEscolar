@@ -1,0 +1,37 @@
+section{
+    height:85vh;
+    width: 60vw;
+    margin:auto;
+    vertical-align: middle;
+}
+
+.sessionContent{
+    padding-top:30vh;
+}
+
+.selectBox{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1, select, #pesquisaInput, .pesquisaElement{
+    width:30vw;
+    margin: auto;
+}
+
+.pesquisaElement{
+    display: flex;
+    flex-direction: column;
+}    
+
+button{
+    width: 20vw;
+    margin: auto;
+}
+
+  
