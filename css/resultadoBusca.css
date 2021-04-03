@@ -21,6 +21,10 @@ h1{
     height: 18vh;
 }
 
+#alunoImg{
+    height :10vh;
+}
+
 .contentResBusca, .cardPerfilAluno{
     display: flex;
     flex-direction: row;
