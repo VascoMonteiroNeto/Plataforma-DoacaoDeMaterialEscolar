@@ -18,10 +18,25 @@ section{
 h1, h2{
     text-align: center;
     height: 35%;
-
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
-h1, select, #pesquisaInput, .pesquisaElement{
+.quebra{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    margin: auto;
+}
+
+hr{
+    width:14vw;
+    margin: auto;
+    height:1px;
+    background-color: black;
+}
+
+h1,  select, #pesquisaInput, .pesquisaElement{
     width:30vw;
     margin: auto;
 }
