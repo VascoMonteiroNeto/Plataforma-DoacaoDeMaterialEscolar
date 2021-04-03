@@ -26,7 +26,7 @@ form{
 }
 .input{
     display: flex;
-    padding: 1vh;
+    padding: 2.5vh;
     width: 35%;
     background: rgba(192, 192, 192, 0.83);
     border-radius: 0.5vh 0.5vh 0px 0px;

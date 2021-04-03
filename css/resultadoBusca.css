@@ -5,6 +5,11 @@ section{
     align-items: center;
 }
 
+h1{
+    text-align: center;
+    
+}
+
 .contentBox{
     display: flex;
     flex-direction: column;

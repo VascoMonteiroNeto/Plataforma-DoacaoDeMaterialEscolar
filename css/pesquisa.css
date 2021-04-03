@@ -17,21 +17,45 @@ section{
 
 h1, h2{
     text-align: center;
+    height: 35%;
+
 }
 
 h1, select, #pesquisaInput, .pesquisaElement{
     width:30vw;
     margin: auto;
 }
-
+input{
+    padding: 2.5vh;
+}
 .pesquisaElement{
     display: flex;
     flex-direction: column;
+}
+#estadoSelect{
+    background: rgba(33, 33, 33, 0.08);
+    padding: 2.5vh;
+    border: none;
+    margin: 0.9vh;
+}
+#municipioSelect{
+    background: rgba(33, 33, 33, 0.08);
+    padding: 2.5vh;
+    border: none;
+    margin: 0.9vh;
 }    
 
 button{
+    color: #6200EE;
+    background: rgba(192, 192, 192, 0.83);
     width: 20vw;
     margin: auto;
+    padding: 1.5vh;
+}
+button:hover{
+    color: white;
+    background: #6200EE;
+    border-radius: 1vh;
 }
 
   
