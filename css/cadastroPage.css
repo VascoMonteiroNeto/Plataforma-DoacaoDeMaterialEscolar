@@ -65,36 +65,39 @@ form, .localInfo{
     display:inline;
    align-items: center;
     color: #6200EE;
-    border: none;
-   margin: 2vh;
+    border-radius: 1vh;   
+    margin: 2vh;
     padding: 2vh;
+    border: none;
+
 
 }
 .btn_doador2{
-    color: #6200EE;
-    border: none;
+    color: #fff;
+    border-radius: 1vh;
     margin: 2vh;
     padding: 2vh;
+    background-color: #6200EE;
+    border: none;
 }
 .btn_doador1:hover{
     color: #fff;
-    background: #6200EE;
-    
-    border-radius: 1vh;
+    background-color: #6200EE;
 }
 .btn_doador2:hover{
-    color: #fff;
-    background: #6200EE;
-   
-    border: none;
+    color: #6200EE;
+    background: #fff;
     border-radius: 1vh;
 }
 
 .checkMaterial{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: space-between;
+    width: 50%;
     margin:auto;
-    margin-top: 5vh
+    margin-top: 5vh;
 }
+
+
+ 
