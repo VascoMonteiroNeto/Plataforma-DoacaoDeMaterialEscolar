@@ -1,0 +1,100 @@
+*{
+    font-family: Roboto;
+    weight: 500;
+font-style: normal;
+font-weight: normal;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+form, .localInfo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin:auto;
+    align-items: center;
+}
+.input{
+    display: flex;
+    padding: 2.5vh;
+    width: 35%;
+    background: rgba(192, 192, 192, 0.83);
+    border-radius: 0.5vh 0.5vh 0px 0px;
+    border: none;
+}
+.select{
+    color: gray;
+    display: flex;
+    margin: 0.9vh;
+    padding: 1.2vh;
+    width: 37%;
+    background: rgba(192, 192, 192, 0.83);
+    border-radius: 0.5vh 0.5vh 0px 0px;
+    border: none;
+}
+.label{
+    display: flex;
+    width: 35%;
+    color: rgba(192, 192, 192, 0.83);
+    
+    margin-bottom: 2vh;
+    
+    font-size: 1.5vh;
+   
+    justify-content:left;
+}
+
+.btn_doador{
+
+    display:flex;
+    width: 5%;
+    margin: auto;
+   
+}
+.btn_doador1{
+    display:inline;
+   align-items: center;
+    color: #6200EE;
+    border: none;
+   margin: 2vh;
+    padding: 2vh;
+
+}
+.btn_doador2{
+    color: #6200EE;
+    border: none;
+    margin: 2vh;
+    padding: 2vh;
+}
+.btn_doador1:hover{
+    color: #fff;
+    background: #6200EE;
+    
+    border-radius: 1vh;
+}
+.btn_doador2:hover{
+    color: #fff;
+    background: #6200EE;
+   
+    border: none;
+    border-radius: 1vh;
+}
+
+.checkMaterial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin:auto;
+    margin-top: 5vh
+}
