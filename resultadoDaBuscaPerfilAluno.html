@@ -7,7 +7,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href="css/resultadoBusca.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <title>Resultados da busca</title>
 </head>
 <body>
@@ -16,13 +16,18 @@
         <div class="logo">
             <img id="logoNav" src="imgs/logotipo-time-26.png" alt="">
         </div>
-        <div class="menuItens">
-            <a href="">Inicio</a>
-            <a href="">Busca</a>
+        <a href="#" class="menu-botao" onclick="showMenu(this)">
+            <span id="barra1" class="barra1"></span>
+            <span id="barra2" class="barra2"></span>
+            <span id="barra3" class="barra3"></span>
+        </a>
+
+        <div class="menuItens" id="menuLinks">
+            <a href="index.html">Inicio</a>
+            <a href="pesquisa.html">Busca</a>
             <a href="">Perfil</a>
         </div>
     </nav>
-
     <section>
     <div class="contentBox">
         <div>

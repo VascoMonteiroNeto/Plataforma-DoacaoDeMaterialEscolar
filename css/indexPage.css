@@ -14,7 +14,6 @@ section{
 
 /* PRIMEIRA  SESSÃO */
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -25,6 +24,7 @@ nav {
     padding-left: 10%;
     padding-right: 10%;    
     box-shadow: 0px 3px 6px #0000005C;
+    position: relative;
 }
 
 a{
@@ -33,11 +33,77 @@ a{
     padding-left: 3vw;
 }
 
+.logo{
+    position: absolute;
+}
+
 #logoNav{
     display: block;
     height: 8vh;
     width: auto;
+    position: relative;
+
 }
+
+.menu-botao {
+    top: 10%;
+    right: 10%;
+    margin: auto;
+    position: absolute;
+    display: none;
+    float: right;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vw;
+    height: 5vh;
+}
+
+.menu-botao>.barra1,
+.barra2,
+.barra3 {
+    height: .7vh;
+    width: 5vw;
+    background-color: #6200EE;
+    z-index: 2;
+    border-radius: 20%;
+}
+
+.menuItens{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menuItens{
+
+}
+
+@media (max-width: 810px) {
+
+    .menu-botao {
+        display: flex;
+        top: 5vh;
+        right: 10%;
+        /* position: fixed; */
+    }
+
+    #menuLinks {
+        display: none;
+        flex-direction: column;
+        margin-top: 12vh;
+        text-align: center;
+        border:#666666;
+        border-style: ridge;
+    }
+
+    #menuLinks> * {
+        float: right;
+        height: 5vh;
+        background-color: white;
+    }
+}
+
 
 .primeiraSessao{
     display: flex;

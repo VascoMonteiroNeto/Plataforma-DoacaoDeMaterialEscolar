@@ -63,12 +63,13 @@ input{
 
 button{
     padding-top: 11vh;
-    color:rgba(192, 192, 192, 0.83);
+    color:white;
     background: #6200EE;
     width: 10vw;
     margin: auto;
     padding: 1.5vh;
     border-radius: 5.63px;
+    border: none;
 }
 button:hover{
     color: white;
