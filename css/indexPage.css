@@ -26,12 +26,10 @@ nav {
     padding-right: 10vw;    
     box-shadow: 0px 3px 6px #0000005C;
 }
+
 a{
     text-decoration: none;
     color:#666666;
-}
-a:hover{
-    color:#6200EE;
 }
 
 #logoNav{
@@ -71,9 +69,16 @@ a:hover{
 }
 
 .botoesTelaInicial > *{
-    background-color: aqua;
+    border-radius: 6.51301px;
+    color: #6200EE;
+    background-color:white;
     padding: 10%;
     margin-top: 10%;
+    margin-right: 10%;
+}
+.botoesTelaInicial > *:hover{
+    color: white;
+    background-color:#6200EE;
 }
 
 /* SEGUNDA SESSÃO */

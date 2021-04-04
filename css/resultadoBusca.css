@@ -28,7 +28,6 @@ h1{
 .contentResBusca, .cardPerfilAluno{
     display: flex;
     flex-direction: row;
-    background-color:bisque;
     height: 20vh;
     width: 40vw;
     margin-top: 1.5vh;
@@ -36,8 +35,7 @@ h1{
 }
 
 .cardPerfilAluno{
-    background-color: brown;
-    justify-content: space-between;
+    justify-content:space-between;
     
 }
 
