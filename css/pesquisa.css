@@ -2,11 +2,15 @@ section{
     height:85vh;
     width: 60vw;
     margin:auto;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .sessionContent{
-    padding-top:30vh;
+    padding-top:10vh;
+}
+
+.sessionContent > *{
+    padding-top:1vh;
 }
 
 .selectBox{
@@ -36,7 +40,7 @@ hr{
     background-color: black;
 }
 
-h1,  select, #pesquisaInput, .pesquisaElement{
+h1,  select, .pesquisaElement{
     width:30vw;
     margin: auto;
 }
@@ -47,25 +51,24 @@ input{
     display: flex;
     flex-direction: column;
 }
-#estadoSelect{
+.pesquisaElement >*{
+    margin-top:2vh;
+}
+#estadoSelect, #municipioSelect{
     background: rgba(33, 33, 33, 0.08);
     padding: 2.5vh;
     border: none;
     margin: 0.9vh;
 }
-#municipioSelect{
-    background: rgba(33, 33, 33, 0.08);
-    padding: 2.5vh;
-    border: none;
-    margin: 0.9vh;
-}    
 
 button{
-    color: #6200EE;
-    background: rgba(192, 192, 192, 0.83);
-    width: 20vw;
+    padding-top: 11vh;
+    color:rgba(192, 192, 192, 0.83);
+    background: #6200EE;
+    width: 10vw;
     margin: auto;
     padding: 1.5vh;
+    border-radius: 5.63px;
 }
 button:hover{
     color: white;

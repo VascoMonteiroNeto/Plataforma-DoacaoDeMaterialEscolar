@@ -9,7 +9,7 @@ body{
     margin: 0;
 }
 section{
-    height: 100vh;
+    height: 85vh;
 }
 
 /* PRIMEIRA  SESSÃO */
@@ -20,46 +20,53 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 15vh;
+    height: 12vh;
     align-items: center;
-    padding-left: 10vw;
-    padding-right: 10vw;    
+    padding-left: 10%;
+    padding-right: 10%;    
     box-shadow: 0px 3px 6px #0000005C;
 }
 
 a{
     text-decoration: none;
     color:#666666;
+    padding-left: 3vw;
 }
 
 #logoNav{
     display: block;
-    height: 10vh;
-    width:auto;
+    height: 8vh;
+    width: auto;
 }
 
 .primeiraSessao{
-    height: 85vh;
     display: flex;
     flex-direction: row;
-    width:100vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
+h1{
+    font-weight: bold;
+    margin-top: 5vh;
+    font-size: 200%;
+}
 .caixaImagem{
     display: flex;
     flex-direction: column;
-    width:70vw;
-    margin: 3%;
+    width: 55vw;
+    height: auto;
 }
 
+
 #imgPrimeiraSessão{
-    width: 50vw;
+    width: 55vw;
+    height: auto;
     margin: auto;
 }
 
 .caixaBotões{
-    float: right;
-    width:30vw;
+    width:22vw;
     margin: auto;
 }
 
@@ -70,15 +77,13 @@ a{
 
 .botoesTelaInicial > *{
     border-radius: 6.51301px;
-    color: #6200EE;
-    background-color:white;
-    padding: 10%;
-    margin-top: 10%;
-    margin-right: 10%;
-}
-.botoesTelaInicial > *:hover{
     color: white;
     background-color:#6200EE;
+    padding: 5%;
+    margin-top: 10%;
+    width: 22vw;
+    text-align: center;
+    font-size:150%;
 }
 
 /* SEGUNDA SESSÃO */
@@ -91,10 +96,16 @@ a{
 }
 
 .textoSegundaSessão{
-    font-size: 120%;
+    font-size: 150%;
+}
+
+.fluxoImg{
+    margin: auto;
 }
 
 #imgPag2{
     height: 60vh;
+    margin: auto;
+    padding-bottom: 5vh;
 }
 

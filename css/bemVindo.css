@@ -8,10 +8,13 @@ section{
 #icon{
     margin-left:auto;
     margin-right:auto;
-    width: 15vw;
+    width: 12vw;
     align-content: flex-end;
     margin-top: vh;
+}
 
+.tituloBemVindo{
+    font-size:  4vw;
 }
 
 .boxSec{
@@ -21,5 +24,31 @@ section{
     margin-left:auto;
     margin-right:auto;
     align-content: top;
+}
 
+.botoesTelaBemVindo{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesTelaBemVindo > *{
+    border-radius: 6.51301px;
+    color: white;
+    background-color:#6200EE;
+    padding: 5%;
+    margin-top: 10%;
+    width: 22vw;
+    text-align: center;
+    font-size:150%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao1:hover{
+    color: #6200EE;
+    background-color:white;
+}
+
+.botao2{
+    color: white;
 }

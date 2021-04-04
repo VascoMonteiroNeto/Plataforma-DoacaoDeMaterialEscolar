@@ -99,5 +99,11 @@ form, .localInfo{
     margin-top: 5vh;
 }
 
+.localInfo > *{
+    padding-top:2vh;
+    padding-bottom: 2vh;
+    margin-top: 6vh
+}
+
 
  
