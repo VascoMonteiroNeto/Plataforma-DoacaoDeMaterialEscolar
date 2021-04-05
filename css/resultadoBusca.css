@@ -17,21 +17,27 @@ h1{
 
 }
 
-#escolaImg{
+.escolaImg{
     height: 18vh;
+}
+
+.contentResBusca{
+    display: flex;
+    flex-direction: column;
 }
 
 #alunoImg{
     height :10vh;
 }
 
-.contentResBusca, .cardPerfilAluno{
+.cardPerfilAluno{
     display: flex;
     flex-direction: row;
     height: 20vh;
     width: 40vw;
     margin-top: 1.5vh;
     margin-left: 5vw;
+    background-color: aqua;
 }
 
 .cardPerfilAluno{
@@ -45,4 +51,26 @@ h1{
 
 #valorLista{
     float: right;
+}
+
+.escola-list{
+    text-align: center;
+}
+
+.textoInfo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction:column;
+}
+
+.boxImage{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 4px solid rgba(33, 33, 33, 0.08);
+}
+.boxImage:hover{
+    background-color:rgba(33, 33, 33, 0.08);
 }

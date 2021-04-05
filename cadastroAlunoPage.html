@@ -7,6 +7,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href="./css/cadastroPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Inicializa o banco cloud firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <title>Cadastro</title>
 </head>
@@ -41,121 +44,113 @@
 
     <main>
    
-      <form action="">
-        <input id="name" class="input" name="name" type="texte" placeholder="Nome do aluno">
-        <label class= "label">Obrigatório</label>
-        <input id="email" class="input" name="name" type="texte" placeholder="Nome do responsável">
-        <label class= "label">Obrigatório</label>
-        <input id="email" class="input" name="date"  type="texte" placeholder="Data de nascimento">
-        <label class= "label">Obrigatório</label>
-        <input id="email" class="input" name="nada" type="texte" placeholder="Número da matrícula">
-        <label class= "label">Obrigatório</label>
-        <select class ="select" name="place">
-            <option disabled selected style="display: none;" value="">Escolaridade</option>
-            <option value="rj">Ensino infantil</option>
-            <option value="sp">Ensino fundamental</option>
-            <option value="es">Ensino médio</option>
-            <option value="mg">Ensino especial</option>
-        </select>
-        <label class= "label">Obrigatório</label>
+        <form id="cadastro-aluno-form" action="">
+            <input  class="input" name="nome" type="text" placeholder="Nome do aluno">
+            <label class= "label">Obrigatório</label>
+            <input  class="input" name="responsavel" type="text" placeholder="Nome do responsável">
+            <label class= "label">Obrigatório</label>
+            <input  class="input" name="nascimento"  type="date" placeholder="Data de nascimento">
+            <label class= "label">Obrigatório</label>
+            <input class="input" name="matricula" type="text" placeholder="Número da matrícula">
+            <label class= "label">Obrigatório</label>
+            <select class ="select" name="tipoDeEnsino">
+                <option disabled selected style="display: none;" value="">Escolaridade</option>
+                <option value="Ensino infantil">Ensino infantil</option>
+                <option value="Ensino fundamental">Ensino fundamental</option>
+                <option value="Ensino médio">Ensino médio</option>
+                <option value="Ensino especial">Ensino especial</option>
+            </select>
+            <label class= "label">Obrigatório</label>
         
-    </form>
-    <div class="btn_doador">
-        <button class="btn_doador1" type="submit">VOLTAR</button>
-        <button class="btn_doador2" type="submit">CONTINUAR</button>
-      </div>
-    
-    <h2>
-        Informe os dados da escola
-    </h2>  
-    
-    <div class="localInfo">
-
-    <select class ="select" name="place">
-        <option disabled selected style="display: none;" value="">Selecione o estado</option>
-        <option value=""></option>
-    </select>
-    
-    <select class ="select" name="place">
-        <option disabled selected style="display: none;" value="">Selecione o município</option>
-        <option value=""></option>
-    </select>
-
-    <select class ="select" name="place">
-        <option disabled selected style="display: none;" value="">Selecione a escola</option>
-        <option value=""></option>
-    </select>
-
-    <div class="btn_doador">
-        <button class="btn_doador1" type="submit">VOLTAR</button>
-        <button class="btn_doador2" type="submit">CONTINUAR</button>
-      </div>
-    </div>
-
-    <h2>
-        Informe os materiais
-    </h2>
-    
-    <div class="localInfo">
-
-        <div class="checkMaterial">
-            <label for="scales">Caderno 1 matéria -80 folhas</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Caderno 10 matérias - 200 folhas</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Kit de canetas hidrográficas(5 unidades)</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Kit de lápis de escrever(5 unidades)</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Caixa de lápis de cor</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Tesoura sem ponta</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Caderno grande de desenho</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Apontador</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Borracha</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Cola branca</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Kit geométrico (régua, transferidor e esquadro)</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-        <div class="checkMaterial">
-            <label for="scales">Mochila</label>
-            <input type="checkbox" id="" name="material">
-        </div>
-
+        <h2>
+            Informe os dados da escola
+        </h2>  
         
-        <div class="btn_doador">
-            <button class="btn_doador1" type="submit">VOLTAR</button>
-            <button class="btn_doador2" type="submit">CONTINUAR</button>
+        <div class="localInfo"></div>
+    
+            <label>Selecione o estado</label>
+            <select class ="select" id="slcEstado" name="slcEstado" onchange="populateMun(this.id, 'slcMunicipio');">
+                <option disabled selected style="display: none;" value=""></option>
+                <option value="MG">Minas Gerais</option>
+                <option value="GO">Goiás</option>
+            </select>
+            </div>
+        <label>Selecione o município</label>
+        <select class ="select" id="slcMunicipio" name="slcMunicipio" onchange="populateEscola(this.id, 'slcEscola');"></select>
+    
+        <label>Selecione a escola</label>
+        <select class ="select" id="slcEscola" name="slcEscola"></select>
+    
+        <h2>
+            Informe os materiais
+        </h2>
         
+        <div class="localInfo">
+    
+            <div class="checkMaterial">
+                <label for="scales">Caderno 1 matéria -80 folhas</label>
+                <input type="checkbox" id="" name="caderno1materia">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Caderno 10 matérias - 200 folhas</label>
+                <input type="checkbox" id="" name="caderno10materias">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Kit de canetas hidrográficas(5 unidades)</label>
+                <input type="checkbox" id="" name="canetas">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Kit de lápis de escrever(5 unidades)</label>
+                <input type="checkbox" id="" name="lapis">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Caixa de lápis de cor</label>
+                <input type="checkbox" id="" name="lapisDeCor">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Tesoura sem ponta</label>
+                <input type="checkbox" id="" name="tesoura">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Apontador</label>
+                <input type="checkbox" id="" name="apontador">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Borracha</label>
+                <input type="checkbox" id="" name="borracha">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Cola branca</label>
+                <input type="checkbox" id="" name="cola">
+            </div>
+            <div class="checkMaterial">
+                <label for="scales">Mochila</label>
+                <input type="checkbox" id="" name="mochila">
+            </div>
+
+            <div class="btn_doador">
+                <button class="btn_doador1" type="">VOLTAR</button>
+                <button onclick="window.location.href = 'index.html';" class="btn_doador2" type="submit">CONTINUAR</button>
+              </div>
         </div>
+        </form>
 
+        <script>
+            // Web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyBXPzLrtuLDgAgnc4x28gkmWAhD2K-bJjk",
+              authDomain: "doe-educao-projeto.firebaseapp.com",
+              projectId: "doe-educao-projeto",
+              storageBucket: "doe-educao-projeto.appspot.com",
+              messagingSenderId: "466188174278",
+              appId: "1:466188174278:web:fd1513ed47fdfb343ae8c7"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const  db = firebase.firestore();
+        </script>
+        <script type="text/javascript" src="js/dataManipulation.js"></script>
 
-    </div>
 
     </main>
 </body>

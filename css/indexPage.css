@@ -45,6 +45,10 @@ a{
 
 }
 
+#perfilMenu{
+    text-decoration: line-through;
+}
+
 .menu-botao {
     top: 10%;
     right: 10%;

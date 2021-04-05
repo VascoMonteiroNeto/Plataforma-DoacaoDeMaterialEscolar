@@ -1,3 +1,5 @@
+// Implementação do menu responsivo
+
 function showMenu(y) {
     y.classList.toggle("change");
     
