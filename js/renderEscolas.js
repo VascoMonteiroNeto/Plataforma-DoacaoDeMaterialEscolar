@@ -2,7 +2,6 @@ const escolaList = document.querySelector('.contentResBusca');
 
 function renderEscolas(doc){
     let div1 = document.createElement('div');
-    // div1.className = "contentResBusca";
     let div2 = document.createElement('div');
     div2.className = "boxImage";
     let img = document.createElement('img');
@@ -14,9 +13,9 @@ function renderEscolas(doc){
     let endereco = document.createElement('span');
     escola.className='textoInfo';
 
-    // ul.setAttribute('data-id', doc.id);
     escola.textContent = doc.data().escola;
     endereco.textContent = doc.data().endereco;
+
 
     console.log(escola.textContent)
     div2.appendChild(img);
@@ -25,14 +24,29 @@ function renderEscolas(doc){
     
     escolaList.appendChild(div2);
     div2.appendChild(div3);
-    
-    
 
+    div2.onclick = function () {
+        localStorage.setItem('escola' , escola.textContent);
+        console.log(escola.textContent);
+        window.location.href = 'resultadoDaBuscaListaDeAlunos.html';
+    };
+    
 }
 
-search='MG'
+search=localStorage.getItem('estado');
 db.collection('dadosEscola').doc(search).collection('escolas').get().then((snapshot) => {
         snapshot.docs.forEach((doc) => {
             renderEscolas(doc);
         })
     })
+
+
+    // document.getElementById("boxImage").addEventListener('click', () => {
+//     console.log("asasa");
+// })
+// document.getElementById("schoolBox").addEventListener('click', () => {
+//     console.log("asasa")
+//     // estado = document.getElementsByClass("textoInfo");
+//     // console.log(estado.value)
+//     // localStorage.setItem('estado', estado.value);
+// });    

@@ -7,6 +7,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href="./css/cadastroPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b220deb36.js" crossorigin="anonymous"></script>
     <!-- Inicializa o banco cloud firestore -->
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
@@ -25,9 +26,9 @@
         </a>
 
         <div class="menuItens" id="menuLinks">
-            <a href="index.html">Inicio</a>
-            <a href="pesquisa.html">Busca</a>
-            <a href="">Perfil</a>
+            <a href="index.html"><i class="fas fa-home" style="color: #6200EE; padding-right: 3px; "></i>Inicio</a>
+            <a href="pesquisa.html"><i class="fas fa-search" style="color: #6200EE; padding-right: 3px;"></i>Busca</a>
+            <a href=""><i class="fas fa-user-circle" style="padding-right: 3px;"></i>Perfil</a>
         </div>
     </nav>
 
@@ -150,6 +151,7 @@
             const  db = firebase.firestore();
         </script>
         <script type="text/javascript" src="js/dataManipulation.js"></script>
+        <script type="text/javascript" src="js/submitFormToDB.js"></script>
 
 
     </main>

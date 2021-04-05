@@ -28,6 +28,7 @@ h1{
 
 #alunoImg{
     height :10vh;
+    padding-left: 1vw;
 }
 
 .cardPerfilAluno{
@@ -36,8 +37,13 @@ h1{
     height: 20vh;
     width: 40vw;
     margin-top: 1.5vh;
-    margin-left: 5vw;
-    background-color: aqua;
+    /* margin-left: 5vw; */
+    /* background-color: aqua; */
+    border-top: 4px solid rgba(33, 33, 33, 0.08);
+    border-bottom: 4px solid rgba(33, 33, 33, 0.08);
+}
+.cardPerfilAluno:hover{
+    background-color:rgba(33, 33, 33, 0.08);
 }
 
 .cardPerfilAluno{

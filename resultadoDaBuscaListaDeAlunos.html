@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8b220deb36.js" crossorigin="anonymous"></script>
+    <!-- Inicializa o banco cloud firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <title>Resultados da busca</title>
 </head>
@@ -24,28 +27,28 @@
         </a>
 
         <div class="menuItens" id="menuLinks">
-            <a href="index.html">Inicio</a>
-            <a href="pesquisa.html">Busca</a>
-            <a href="">Perfil</a>
+            <a href="index.html"><i class="fas fa-home" style="color: #6200EE; padding-right: 3px; "></i>Inicio</a>
+            <a href="pesquisa.html"><i class="fas fa-search" style="color: #6200EE; padding-right: 3px;"></i>Busca</a>
+            <a href=""><i class="fas fa-user-circle" style="padding-right: 3px;"></i>Perfil</a>
         </div>
     </nav>
 
     <section>
     <div class="contentBox">
         <div>
-            <i class="fas fa-arrow-left"></i> Voltar
+            <i onclick="window.location.href = 'resultadoDaBuscaEscola.html';" class="fas fa-arrow-left"></i> Voltar
         </div>
         <div>
             <h1>Resultados da Busca</h1>
+            <h2 style="text-align:center;">Alunos da escola: </h2>
+            <ul style="text-align:center;" id="escola-list"></ul>
+            <hr>
         </div>
-        <div class="contentResBusca">
-            <div><img id="escolaImg" src="imgs/escolaIcon.png"></div>
+        
+        
+        <!-- <div class="cardPerfilAluno">
             <div>
-                CONTEUDO COMM INFO DA ESSCOLA QUE MUDARÁ DINAMICAMENTE
-            </div>
-        </div>
-        <div class="cardPerfilAluno">
-            <div><img id="alunoImg" src="imgs/alunoIcon.png"></div>
+                <img id="alunoImg" src="imgs/alunoIcon.png"></div>
             <div>
                 Aluno Fulano de Tal<br>
                 Ensino Médio
@@ -53,9 +56,27 @@
             <div id="valorLista">
                 R$100
             </div>
-        </div>
+        </div> -->
 
     </div>
+    <script>
+        // Web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBXPzLrtuLDgAgnc4x28gkmWAhD2K-bJjk",
+          authDomain: "doe-educao-projeto.firebaseapp.com",
+          projectId: "doe-educao-projeto",
+          storageBucket: "doe-educao-projeto.appspot.com",
+          messagingSenderId: "466188174278",
+          appId: "1:466188174278:web:fd1513ed47fdfb343ae8c7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const  db = firebase.firestore();
+    </script>
+    <!-- Renderizar lista de alunos dinamicamente -->
+    <script type="text/javascript" src="js/renderAlunos.js"></script>
+
 </section>
 
-</section >   
+</body>
+</html>   
