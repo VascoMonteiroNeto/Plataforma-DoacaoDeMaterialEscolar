@@ -39,14 +39,3 @@ db.collection('dadosEscola').doc(search).collection('escolas').get().then((snaps
             renderEscolas(doc);
         })
     })
-
-
-    // document.getElementById("boxImage").addEventListener('click', () => {
-//     console.log("asasa");
-// })
-// document.getElementById("schoolBox").addEventListener('click', () => {
-//     console.log("asasa")
-//     // estado = document.getElementsByClass("textoInfo");
-//     // console.log(estado.value)
-//     // localStorage.setItem('estado', estado.value);
-// });    
