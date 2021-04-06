@@ -1,13 +1,17 @@
 //Função que adiciona itens na lista e atualiza no banco remoto
+const form = document.querySelector('#cadastro-aluno-form');
 
 var estadoDoALuno=document.getElementById('slcEstado');
 var municipioDoALuno=document.getElementById('slcMunicipio');
 var escolaDoAluno=document.getElementById('slcEscola');
 
-form.addEventListener('submit',() => {
+
+
+form.addEventListener('submit',(e) => {
+    e.preventDefault();
 
     alert('Pronto! A sua lista foi cadastrada com sucesso!');
-    
+
     db.collection('dadosEscola').doc(estadoDoALuno.value).collection('escolas').doc(escolaDoAluno.value).collection('Alunos').add({
             nome: form.nome.value,
             responsavel: form.responsavel.value,
@@ -24,15 +28,8 @@ form.addEventListener('submit',() => {
                 apontador: form.apontador.checked,
                 borracha: form.borracha.checked,
                 cola: form.cola.checked,
-                mochila: form.mochila.checked
+                mochila: form.mochila.checked,
             }
     })
-    // .then((docRef) => {
-    //     docRef.collection('Lista').add({
-    //         if (form.mochila.checked==true) {
-    //             mochila: form.mochila.checked
-    //         }
-            
-    //     });
-    // })
+    
 });

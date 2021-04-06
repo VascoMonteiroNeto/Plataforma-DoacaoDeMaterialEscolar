@@ -34,7 +34,7 @@ h1{
 .cardPerfilAluno{
     display: flex;
     flex-direction: row;
-    height: 20vh;
+    height: auto;
     width: 40vw;
     margin-top: 1.5vh;
     /* margin-left: 5vw; */

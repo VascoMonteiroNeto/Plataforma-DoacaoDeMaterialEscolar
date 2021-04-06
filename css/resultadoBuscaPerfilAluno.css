@@ -42,3 +42,22 @@
     margin:auto;
     margin-top: 5vh;
 }
+
+.doadorBox{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-content:space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-top: 4px solid rgba(33, 33, 33, 0.08);
+    font-size:5vw;    
+}
+
+.doadorBox > label{
+    font-size:2vw; 
+}

@@ -4,36 +4,36 @@ escolaList.style["font-size"] = "150%";
 
 function renderAlunos(doc){
     
-    // console.log(doc.data().escolaridade);
+    console.log(doc.data().escolaridade);
     
-    // // let div1 = document.createElement('div');
-    // // div1.className = "contentResBusca";
-    // let div2 = document.createElement('div');
-    // div2.className = "cardPerfilAluno";
-    // let img = document.createElement('img');
-    // img.src = "imgs/alunoIcon.png";
-    // img.setAttribute("id", "alunoImg");
-    // let div3 = document.createElement('div');
-    // div3.className = "textoInfo";
-    // let escola = document.createElement('span');
-    // let endereco = document.createElement('span');
-    // escola.className='textoInfo';
+    // let div1 = document.createElement('div');
+    // div1.className = "contentResBusca";
+    let div2 = document.createElement('div');
+    div2.className = "cardPerfilAluno";
+    let img = document.createElement('img');
+    img.src = "imgs/alunoIcon.png";
+    img.setAttribute("id", "alunoImg");
+    let div3 = document.createElement('div');
+    div3.className = "textoInfo";
+    let escola = document.createElement('span');
+    let endereco = document.createElement('span');
+    escola.className='textoInfo';
 
-    // escola.textContent = doc.data().nome;
-    // endereco.textContent = doc.data().escolaridade;
+    escola.textContent = doc.data().nome;
+    endereco.textContent = doc.data().escolaridade;
 
-    // div2.appendChild(img);
-    // div3.appendChild(escola);
-    // div3.appendChild(endereco);
+    div2.appendChild(img);
+    div3.appendChild(escola);
+    div3.appendChild(endereco);
     
-    // escolaList.appendChild(div2);
-    // div2.appendChild(div3);
+    escolaList.appendChild(div2);
+    div2.appendChild(div3);
 
-    // div2.onclick = function () {
-    //     localStorage.setItem('aluno' , escola.textContent);
-    //     console.log(escola.textContent);
-    //     window.location.href = 'resultadoDaBuscaPerfilAluno.html';
-    // };
+    div2.onclick = function () {
+        localStorage.setItem('aluno' , escola.textContent);
+        console.log(escola.textContent);
+        window.location.href = 'resultadoDaBuscaPerfilAluno.html';
+    };
     
 }
 

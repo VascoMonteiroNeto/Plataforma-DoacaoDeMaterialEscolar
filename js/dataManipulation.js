@@ -1,4 +1,3 @@
-const form = document.querySelector('#cadastro-aluno-form');
 
 //FUNÇÕES QUE MUDAM AUTOMATICAMENTE O MUNICIPIO/ESCOLA DE ACORDO COM O ESTADO/MUNICIPIO SELECIONADO
 
@@ -34,7 +33,6 @@ function escolasSelector(doc, esc){
 
 function populateEscola(mun, esc){
 
-    console.log('aaaaa');
     var esc = document.getElementById(esc);
     var mun = document.getElementById(mun);
 
@@ -57,9 +55,10 @@ function populateEscola(mun, esc){
 }
 
 
-////Armazena o valor do botão para ser usado na próxima página(renderização dinâmica)
+//Armazena o valor do botão para ser usado na próxima página(renderização dinâmica)
 
-document.getElementById("buttonQuery").addEventListener('click', () => {
+const butSlc = document.getElementById("buttonQuery");
+butSlc.addEventListener('click', () => {
     estado = document.getElementById("estadoSelect");
     console.log(estado.value)
     localStorage.setItem('estado', estado.value);
