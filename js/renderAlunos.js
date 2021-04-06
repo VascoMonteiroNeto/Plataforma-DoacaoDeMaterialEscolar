@@ -31,7 +31,6 @@ function renderAlunos(doc){
 
     div2.onclick = function () {
         localStorage.setItem('aluno' , escola.textContent);
-        console.log(escola.textContent);
         window.location.href = 'resultadoDaBuscaPerfilAluno.html';
     };
     
