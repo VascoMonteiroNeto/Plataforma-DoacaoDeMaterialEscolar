@@ -80,3 +80,12 @@ h1{
 .boxImage:hover{
     background-color:rgba(33, 33, 33, 0.08);
 }
+
+@media (max-width: 800px){
+
+    .cardPerfilAluno, .contentBox{
+        width: 90vw;
+        font-size: 2vh;
+    }
+
+}

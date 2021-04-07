@@ -57,9 +57,9 @@ form, .localInfo{
 .btn_doador{
 
     display:flex;
-    width: 5%;
+    width: 100%;
     margin: auto;
-   
+    justify-content: flex-end;
 }
 .btn_doador1{
     display:inline;
@@ -69,6 +69,7 @@ form, .localInfo{
     margin: 2vh;
     padding: 2vh;
     border: none;
+    
 
 
 }
@@ -106,4 +107,25 @@ form, .localInfo{
 }
 
 
- 
+@media (max-width: 780px){
+    .input, .select, .localInfo, .checkMaterial{
+        display: flex;
+        padding: 2.5vh;
+        width: 70vw;
+    }
+    form>select, input{
+        width: 70vw;
+    }
+    
+}
+
+/* @media (max-width: 500px){
+    .input, .select, .localInfo, .checkMaterial{
+        display: flex;
+        padding: 2.5vh;
+        width: 90vw;
+    }
+    form>select, input{
+        width: 70vw;
+    }
+} */

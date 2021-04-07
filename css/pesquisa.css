@@ -77,4 +77,15 @@ button:hover{
     border-radius: 1vh;
 }
 
-  
+@media (max-width: 750px){
+    section{
+        width: 80vw;
+    }
+    section>*, h1,  select, .pesquisaElement{
+        width:100%;
+    }
+    button{
+        width:27vw;
+    }
+
+}
