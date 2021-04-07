@@ -4,7 +4,7 @@
 ### Como não possui servidor ou backend propriamente dito, é só iniciar o "index.html" em um server local, como o plugin Live Server do VSCode ou análogo.
 ### Também funciona se for aberto direto no navegador de sua preferência.
 
-### A integração com o banco de dados(Cloud Firestore) na nuvem foi feita toda através do código javascript, onde eles são inseridos e atualizados em tempo real.
+### A integração com o banco de dados(Cloud Firestore) na nuvem foi feita toda através do código javascript, onde os dados são inseridos e atualizados em tempo real.
 
 ### 1ª Observação: Algumas funcionalidades não foram implementadas, como o cadastro de perfil por exemplo.
 
