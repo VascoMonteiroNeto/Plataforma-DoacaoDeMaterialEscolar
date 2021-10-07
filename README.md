@@ -1,4 +1,4 @@
-# HackathonFCamara-Squad26
+## Case: "Dôe Educação", plataforma de doação de materiais escolares
 
 ## Instruções para deploy da aplicação:
 ### Como não possui servidor ou backend propriamente dito, é só iniciar o "index.html" em um server local, como o plugin Live Server do VSCode ou análogo.
